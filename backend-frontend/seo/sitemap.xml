@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage -->
+  <url>
+    <loc>https://ugem.app/</loc>
+    <lastmod>2025-02-03</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Example: Terms of use Page -->
+  <url>
+    <loc>https://ugem.app/terms-of-use</loc>
+    <lastmod>2025-02-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Example: Contact Page -->
+  <url>
+    <loc>https://ugem.app/privacy-policy</loc>
+    <lastmod>2025-02-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>

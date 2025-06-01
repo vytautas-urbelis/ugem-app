@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+      --color-primary: 132, 166, 249;
+      /* --color-secondary: 111 114 185;
+      --color-primary: 111 114 185;
+      --color-secondary: 111 114 185;
+      --color-background: 111 114 185;
+      --color-tablebackground: 111 114 185;
+      --color-blackbackground: 111 114 185;
+      --color-normaltext: 111 114 185;
+      --color-secondtext: 111 114 185;
+      --color-whitetext: 111 114 185;
+      --color-whitesecondtext: 111 114 185;
+      --color-activeborder: 111 114 185;
+      --color-pasiveborder: 111 114 185; */
+    }
+  }
+
+  /* {
+  
+  } */

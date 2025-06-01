@@ -1,0 +1,108 @@
+*.pyc
+__pycache__
+.idea
+*.sqlite3
+*.pkpass
+.DS_STORE
+static-files
+media-files
+node_modules
+#*_initial.py
+#migrations
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+dist
+dist-ssr
+*.local
+
+backend/project/settings_test.py
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OSX
+#
+.DS_Store
+
+# Xcode
+#
+build
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+project.xcworkspace
+.xcode.env.local
+
+# Bundle artifacts
+*.jsbundle
+
+# CocoaPods
+Pods
+
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# dependencies
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+
+# Android
+/android-delete/app/release/
+/android-delete/app/build/
+
+
+# Native
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+*.pem
+
+# local env files
+.env*.local
+
+# typescript
+*.tsbuildinfo
+

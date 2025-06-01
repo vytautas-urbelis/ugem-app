@@ -1,0 +1,74 @@
+version: '3'
+services:
+  backend:
+    image: registry.gitlab.com/ugem.app/ugem:develop
+    command: 'sh /scripts/stag.sh'
+    env_file:
+      - envs/stag.env
+    depends_on:
+      - database
+      - redis
+    volumes:
+      - static_files:/static-files
+      - media_files:/media-files
+      - frontend_build:/frontend/dist
+
+  database:
+    image: postgres:16
+    env_file:
+      - envs/stag.env
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  nginx:
+    image: nginx:1.25
+    ports:
+      - '80:80'
+      - '443:443'
+    volumes:
+      - static_files:/static-files
+      - media_files:/media-files
+      - ./seo:/seo
+      - ./well-known:/well-known
+      - ./nginx-staging:/etc/nginx/conf.d
+      - frontend_build:/frontend_build
+      - /etc/letsencrypt:/etc/letsencrypt
+      - ./public:/var/www/ugem/public
+    restart: always
+    depends_on:
+      - certbot
+
+  redis:
+    image: redis:7.4.1
+    env_file:
+      - envs/dev.env
+
+  certbot:
+    image: certbot/certbot:latest
+    volumes:
+      - ./public:/var/www/ugem/public
+      - /etc/letsencrypt:/etc/letsencrypt
+    entrypoint: /bin/sh
+    command: -c "sleep 10 && certbot certonly --webroot -w /var/www/ugem/public -d www.staging-develop.ugem.app -d staging-develop.ugem.app --email team@ugem.app --non-interactive --agree-tos --no-eff-email && crond -f -d 8"
+    # Explanation:
+    # - Sleep 10s: Wait for nginx to be fully up and serving.
+    # - certbot certonly: Obtain initial certificates via webroot challenge.
+    # - crond: Start a cron daemon for scheduling renewals.
+
+  renewer:
+    image: certbot/certbot:latest
+    volumes:
+      - ./public:/var/www/ugem/public
+      - /etc/letsencrypt:/etc/letsencrypt
+    entrypoint: /bin/sh
+    command: -c "echo '0 3 * * * certbot renew --webroot -w /var/www/ugem/public && docker exec nginx nginx -s reload' | crontab - && crond -f -d 8"
+    # Explanation:
+    # At 3 AM every day:
+    # - Run certbot renew to refresh certificates if needed.
+    # - If renewed, nginx is signaled to reload certificates.
+
+volumes:
+  postgres_data:
+  static_files:
+  media_files:
+  frontend_build:

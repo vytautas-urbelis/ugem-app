@@ -1,0 +1,87 @@
+import {View} from "react-native";
+import * as Haptics from "expo-haptics";
+import {useEffect, useState} from "react";
+import {GetVoucher} from "../../../../axios/axiosTeams/voucher";
+import {controlStorage} from "../../../../MMKV/control";
+import Loader from "../../../../components/smallComponents/loader";
+import OnVoucherFailure from "../../../../components/commonComponents/onVoucherScanned/onFailure";
+import OnVoucherExists from "../../../../components/commonComponents/onVoucherScanned";
+import {authStorage} from "../../../../MMKV/auth";
+import {getTeamProfileMMKV} from "../../../../MMKV/mmkvTeams";
+import {Modal, SlideAnimation} from "react-native-modals";
+
+const VoucherScannedHome = () => {
+    const scannedVoucher = controlStorage.getString("scannedVoucherQr");
+    const accestToken = authStorage.getString("accessToken");
+    const teamProfile = getTeamProfileMMKV();
+
+    const [isLoading, setIsLoading] = useState(true);
+    const [voucher, setVoucher] = useState(null);
+    const [success, setSuccess] = useState(false);
+    const [responseMessage, SetResponseMessage] = useState("");
+    const [errorVisible, setErrorVisible] = useState(false);
+    const [onVoucherExists, setOnVoucherExists] = useState(false);
+
+    useEffect(() => {
+        const onVoucherUse = async () => {
+            try {
+                const response = await GetVoucher(scannedVoucher, teamProfile.user_id, accestToken);
+                console.log(response, "dddd");
+                setVoucher(response);
+                setIsLoading(false);
+                setOnVoucherExists(true);
+                SetResponseMessage(response.message);
+                Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
+            } catch (error) {
+                console.log(error.response.data.message);
+                SetResponseMessage(error.response.data.message);
+                setSuccess(false);
+                setErrorVisible(true);
+                Haptics.notificationAsync(Haptics.NotificationFeedbackType.Error);
+            } finally {
+                setIsLoading(false);
+            }
+        };
+        if (scannedVoucher) {
+            onVoucherUse();
+        }
+    }, []);
+
+    return (
+        <>
+            {isLoading ? (
+                <Loader/>
+            ) : (
+                <>
+                    <Modal
+                        style={{zIndex: 2}}
+                        visible={errorVisible}
+                        modalAnimation={
+                            new SlideAnimation({
+                                slideFrom: "bottom",
+                            })
+                        }>
+                        <View className="flex-1 w-screen h-screen">
+                            <OnVoucherFailure responseMessage={responseMessage} setErrorVisible={setErrorVisible}/>
+                        </View>
+                    </Modal>
+                    <Modal
+                        style={{zIndex: 2}}
+                        visible={onVoucherExists}
+                        modalAnimation={
+                            new SlideAnimation({
+                                slideFrom: "bottom",
+                            })
+                        }>
+                        <View className="flex-1 w-screen h-screen">
+                            <OnVoucherExists voucher={voucher} setOnVoucherExists={setOnVoucherExists}/>
+                        </View>
+                    </Modal>
+                    <View className="bg-white flex-1"></View>
+                </>
+            )}
+        </>
+    );
+};
+
+export default VoucherScannedHome;

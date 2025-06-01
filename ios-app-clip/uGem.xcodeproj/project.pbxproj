@@ -1,0 +1,1361 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00F476A74BC9404687D8576C /* noop-file.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971AC65CB452486DB5DB8C4B /* noop-file.swift */; };
+		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
+		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
+		592813A8F79D02CF3F8E74A9 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = E17BDC350CA9FCF687FB23F9 /* PrivacyInfo.xcprivacy */; };
+		96905EF65AED1B983A6B3ABC /* libPods-uGem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58EEBF8E8E6FB1BC6CAF49B5 /* libPods-uGem.a */; };
+		B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */; };
+		B98D855E2D5647BA007EB784 /* uGemClipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98D855D2D5647BA007EB784 /* uGemClipApp.swift */; };
+		B98D85622D5647BC007EB784 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B98D85612D5647BB007EB784 /* Assets.xcassets */; };
+		B98D85652D5647BC007EB784 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B98D85642D5647BC007EB784 /* Preview Assets.xcassets */; };
+		B98D85712D5647BC007EB784 /* uGemClipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98D85702D5647BC007EB784 /* uGemClipTests.swift */; };
+		B98D857B2D5647BC007EB784 /* uGemClipUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98D857A2D5647BC007EB784 /* uGemClipUITests.swift */; };
+		B98D857D2D5647BC007EB784 /* uGemClipUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98D857C2D5647BC007EB784 /* uGemClipUITestsLaunchTests.swift */; };
+		B98D85802D5647BC007EB784 /* uGemClip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = B98D855B2D5647BA007EB784 /* uGemClip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B9A2F15F2D645A6A00401C69 /* CollectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A2F15E2D645A6600401C69 /* CollectorView.swift */; };
+		B9A2F1632D64724400401C69 /* RewardAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A2F1622D64724400401C69 /* RewardAPI.swift */; };
+		B9A2F1642D64724400401C69 /* CollectorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A2F1612D64724400401C69 /* CollectorResponse.swift */; };
+		B9A2F1662D64729300401C69 /* VoucherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A2F1652D64729300401C69 /* VoucherResponse.swift */; };
+		B9A2F1682D6472BE00401C69 /* ResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A2F1672D6472BE00401C69 /* ResponseType.swift */; };
+		B9A2F16A2D64850600401C69 /* RewardResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A2F1692D6484FB00401C69 /* RewardResponseType.swift */; };
+		B9A2F16C2D64883800401C69 /* VoucherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A2F16B2D64883100401C69 /* VoucherModel.swift */; };
+		B9A2F16E2D64884400401C69 /* CollectorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A2F16D2D64884000401C69 /* CollectorModel.swift */; };
+		B9A2F1702D64CA1200401C69 /* RewardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A2F16F2D64CA1200401C69 /* RewardModel.swift */; };
+		B9A2F1722D65BCEA00401C69 /* VoucherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A2F1712D65BCE500401C69 /* VoucherView.swift */; };
+		B9A2F1742D65E94400401C69 /* StampSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A2F1732D65E93A00401C69 /* StampSelector.swift */; };
+		B9C0B1E42D3651B3005CE2A8 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9C0B1E32D3651B3005CE2A8 /* StoreKit.framework */; };
+		B9ECAD982D5B93FC00388266 /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = B9ECAD962D5B93FC00388266 /* ding.wav */; };
+		B9ECADF02D5DF44E00388266 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9ECADEF2D5DF44A00388266 /* UserModel.swift */; };
+		B9ECADF22D5DF59400388266 /* UserAuthAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9ECADF12D5DF58E00388266 /* UserAuthAPI.swift */; };
+		B9ECADF72D5DFCDA00388266 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9ECADF62D5DFCD400388266 /* HomeView.swift */; };
+		B9ECADF92D5DFD0A00388266 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9ECADF82D5DFD0700388266 /* LoginView.swift */; };
+		B9ECADFB2D5E1F3100388266 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9ECADFA2D5E1F2B00388266 /* LoginViewController.swift */; };
+		B9ECADFD2D5E70CB00388266 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9ECADFC2D5E70C600388266 /* MainView.swift */; };
+		B9ECADFF2D5F206D00388266 /* homeBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = B9ECADFE2D5F206D00388266 /* homeBackground.png */; };
+		B9ECAE032D5F209E00388266 /* uGem.svg in Resources */ = {isa = PBXBuildFile; fileRef = B9ECAE022D5F209E00388266 /* uGem.svg */; };
+		B9ECAE072D5F35E600388266 /* AppleCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9ECAE062D5F35DF00388266 /* AppleCoordinator.swift */; };
+		B9ECAE092D5F3BAA00388266 /* UserCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9ECAE082D5F3BA500388266 /* UserCardView.swift */; };
+		B9ECAE0B2D5F71FD00388266 /* UserAuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9ECAE0A2D5F71F100388266 /* UserAuthResponse.swift */; };
+		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B98D856D2D5647BC007EB784 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B98D855A2D5647BA007EB784;
+			remoteInfo = uGemClip;
+		};
+		B98D85772D5647BC007EB784 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B98D855A2D5647BA007EB784;
+			remoteInfo = uGemClip;
+		};
+		B98D857E2D5647BC007EB784 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B98D855A2D5647BA007EB784;
+			remoteInfo = uGemClip;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B98D85402D563802007EB784 /* Embed App Clips */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/AppClips";
+			dstSubfolderSpec = 16;
+			files = (
+				B98D85802D5647BC007EB784 /* uGemClip.app in Embed App Clips */,
+			);
+			name = "Embed App Clips";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		13B07F961A680F5B00A75B9A /* uGem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uGem.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = uGem/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = uGem/AppDelegate.mm; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = uGem/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = uGem/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = uGem/main.m; sourceTree = "<group>"; };
+		58EEBF8E8E6FB1BC6CAF49B5 /* libPods-uGem.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-uGem.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C2E3173556A471DD304B334 /* Pods-uGem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uGem.debug.xcconfig"; path = "Target Support Files/Pods-uGem/Pods-uGem.debug.xcconfig"; sourceTree = "<group>"; };
+		7A4D352CD337FB3A3BF06240 /* Pods-uGem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uGem.release.xcconfig"; path = "Target Support Files/Pods-uGem/Pods-uGem.release.xcconfig"; sourceTree = "<group>"; };
+		971AC65CB452486DB5DB8C4B /* noop-file.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "noop-file.swift"; path = "uGem/noop-file.swift"; sourceTree = "<group>"; };
+		A97E0DE3D7194281A4B56751 /* uGem-Bridging-Header.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "uGem-Bridging-Header.h"; path = "uGem/uGem-Bridging-Header.h"; sourceTree = "<group>"; };
+		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = uGem/SplashScreen.storyboard; sourceTree = "<group>"; };
+		B98D855B2D5647BA007EB784 /* uGemClip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uGemClip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B98D855D2D5647BA007EB784 /* uGemClipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uGemClipApp.swift; sourceTree = "<group>"; };
+		B98D85612D5647BB007EB784 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B98D85642D5647BC007EB784 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B98D85662D5647BC007EB784 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B98D85672D5647BC007EB784 /* uGemClip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = uGemClip.entitlements; sourceTree = "<group>"; };
+		B98D856C2D5647BC007EB784 /* uGemClipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uGemClipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B98D85702D5647BC007EB784 /* uGemClipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uGemClipTests.swift; sourceTree = "<group>"; };
+		B98D85762D5647BC007EB784 /* uGemClipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uGemClipUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B98D857A2D5647BC007EB784 /* uGemClipUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uGemClipUITests.swift; sourceTree = "<group>"; };
+		B98D857C2D5647BC007EB784 /* uGemClipUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uGemClipUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B9A2F15E2D645A6600401C69 /* CollectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectorView.swift; sourceTree = "<group>"; };
+		B9A2F1612D64724400401C69 /* CollectorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectorResponse.swift; sourceTree = "<group>"; };
+		B9A2F1622D64724400401C69 /* RewardAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardAPI.swift; sourceTree = "<group>"; };
+		B9A2F1652D64729300401C69 /* VoucherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoucherResponse.swift; sourceTree = "<group>"; };
+		B9A2F1672D6472BE00401C69 /* ResponseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseType.swift; sourceTree = "<group>"; };
+		B9A2F1692D6484FB00401C69 /* RewardResponseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardResponseType.swift; sourceTree = "<group>"; };
+		B9A2F16B2D64883100401C69 /* VoucherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoucherModel.swift; sourceTree = "<group>"; };
+		B9A2F16D2D64884000401C69 /* CollectorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectorModel.swift; sourceTree = "<group>"; };
+		B9A2F16F2D64CA1200401C69 /* RewardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardModel.swift; sourceTree = "<group>"; };
+		B9A2F1712D65BCE500401C69 /* VoucherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoucherView.swift; sourceTree = "<group>"; };
+		B9A2F1732D65E93A00401C69 /* StampSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StampSelector.swift; sourceTree = "<group>"; };
+		B9C0B1E32D3651B3005CE2A8 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		B9ECAD962D5B93FC00388266 /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ding.wav; sourceTree = "<group>"; };
+		B9ECADEF2D5DF44A00388266 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		B9ECADF12D5DF58E00388266 /* UserAuthAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthAPI.swift; sourceTree = "<group>"; };
+		B9ECADF62D5DFCD400388266 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B9ECADF82D5DFD0700388266 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		B9ECADFA2D5E1F2B00388266 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B9ECADFC2D5E70C600388266 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		B9ECADFE2D5F206D00388266 /* homeBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homeBackground.png; sourceTree = "<group>"; };
+		B9ECAE022D5F209E00388266 /* uGem.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = uGem.svg; sourceTree = "<group>"; };
+		B9ECAE062D5F35DF00388266 /* AppleCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleCoordinator.swift; sourceTree = "<group>"; };
+		B9ECAE082D5F3BA500388266 /* UserCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCardView.swift; sourceTree = "<group>"; };
+		B9ECAE0A2D5F71F100388266 /* UserAuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthResponse.swift; sourceTree = "<group>"; };
+		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
+		E17BDC350CA9FCF687FB23F9 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = uGem/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-uGem/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96905EF65AED1B983A6B3ABC /* libPods-uGem.a in Frameworks */,
+				B9C0B1E42D3651B3005CE2A8 /* StoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B98D85582D5647BA007EB784 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B98D85692D5647BC007EB784 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B98D85732D5647BC007EB784 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13B07FAE1A68108700A75B9A /* uGem */ = {
+			isa = PBXGroup;
+			children = (
+				BB2F792B24A3F905000567C9 /* Supporting */,
+				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
+				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				13B07FB61A68108700A75B9A /* Info.plist */,
+				13B07FB71A68108700A75B9A /* main.m */,
+				AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */,
+				971AC65CB452486DB5DB8C4B /* noop-file.swift */,
+				A97E0DE3D7194281A4B56751 /* uGem-Bridging-Header.h */,
+				E17BDC350CA9FCF687FB23F9 /* PrivacyInfo.xcprivacy */,
+			);
+			name = uGem;
+			sourceTree = "<group>";
+		};
+		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9C0B1E32D3651B3005CE2A8 /* StoreKit.framework */,
+				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+				58EEBF8E8E6FB1BC6CAF49B5 /* libPods-uGem.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				13B07FAE1A68108700A75B9A /* uGem */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				B98D855C2D5647BA007EB784 /* uGemClip */,
+				B98D856F2D5647BC007EB784 /* uGemClipTests */,
+				B98D85792D5647BC007EB784 /* uGemClipUITests */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				D65327D7A22EEC0BE12398D9 /* Pods */,
+				D7E4C46ADA2E9064B798F356 /* ExpoModulesProviders */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* uGem.app */,
+				B98D855B2D5647BA007EB784 /* uGemClip.app */,
+				B98D856C2D5647BC007EB784 /* uGemClipTests.xctest */,
+				B98D85762D5647BC007EB784 /* uGemClipUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		92DBD88DE9BF7D494EA9DA96 /* uGem */ = {
+			isa = PBXGroup;
+			children = (
+				FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */,
+			);
+			name = uGem;
+			sourceTree = "<group>";
+		};
+		B98D855C2D5647BA007EB784 /* uGemClip */ = {
+			isa = PBXGroup;
+			children = (
+				B9ECADE82D5DF1C800388266 /* Modules */,
+				B9ECADE72D5DF1A600388266 /* Networking */,
+				B9ECADE62D5DF1A000388266 /* UI */,
+				B9ECAD972D5B93FC00388266 /* Resources */,
+				B98D85632D5647BC007EB784 /* Preview Content */,
+				B9ECAD862D5B245800388266 /* Views */,
+				B9ECAD732D59FC3F00388266 /* Models */,
+				B98D855D2D5647BA007EB784 /* uGemClipApp.swift */,
+				B98D85612D5647BB007EB784 /* Assets.xcassets */,
+				B98D85662D5647BC007EB784 /* Info.plist */,
+				B98D85672D5647BC007EB784 /* uGemClip.entitlements */,
+			);
+			path = uGemClip;
+			sourceTree = "<group>";
+		};
+		B98D85632D5647BC007EB784 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B98D85642D5647BC007EB784 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B98D856F2D5647BC007EB784 /* uGemClipTests */ = {
+			isa = PBXGroup;
+			children = (
+				B98D85702D5647BC007EB784 /* uGemClipTests.swift */,
+			);
+			path = uGemClipTests;
+			sourceTree = "<group>";
+		};
+		B98D85792D5647BC007EB784 /* uGemClipUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B98D857A2D5647BC007EB784 /* uGemClipUITests.swift */,
+				B98D857C2D5647BC007EB784 /* uGemClipUITestsLaunchTests.swift */,
+			);
+			path = uGemClipUITests;
+			sourceTree = "<group>";
+		};
+		B9A2F1602D64721A00401C69 /* RewardAPI */ = {
+			isa = PBXGroup;
+			children = (
+				B9A2F1692D6484FB00401C69 /* RewardResponseType.swift */,
+				B9A2F1612D64724400401C69 /* CollectorResponse.swift */,
+				B9A2F1652D64729300401C69 /* VoucherResponse.swift */,
+				B9A2F1672D6472BE00401C69 /* ResponseType.swift */,
+				B9A2F1622D64724400401C69 /* RewardAPI.swift */,
+			);
+			path = RewardAPI;
+			sourceTree = "<group>";
+		};
+		B9ECAD732D59FC3F00388266 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B9A2F16F2D64CA1200401C69 /* RewardModel.swift */,
+				B9A2F16D2D64884000401C69 /* CollectorModel.swift */,
+				B9A2F16B2D64883100401C69 /* VoucherModel.swift */,
+				B9ECADEF2D5DF44A00388266 /* UserModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B9ECAD862D5B245800388266 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B9ECAD972D5B93FC00388266 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B9ECAE012D5F208F00388266 /* svgs */,
+				B9ECAE002D5F208700388266 /* pngs */,
+				B9ECAD962D5B93FC00388266 /* ding.wav */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B9ECADE62D5DF1A000388266 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		B9ECADE72D5DF1A600388266 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B9ECADE92D5DF30F00388266 /* APIServices */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		B9ECADE82D5DF1C800388266 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				B9ECADFC2D5E70C600388266 /* MainView.swift */,
+				B9ECADED2D5DF35F00388266 /* CollectorCardModule */,
+				B9ECADEC2D5DF35500388266 /* VoucherModule */,
+				B9ECADEB2D5DF33F00388266 /* HomeModule */,
+				B9ECADEA2D5DF32300388266 /* LoginModule */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		B9ECADE92D5DF30F00388266 /* APIServices */ = {
+			isa = PBXGroup;
+			children = (
+				B9A2F1602D64721A00401C69 /* RewardAPI */,
+				B9ECAE0C2D5F725100388266 /* UserAuth */,
+			);
+			path = APIServices;
+			sourceTree = "<group>";
+		};
+		B9ECADEA2D5DF32300388266 /* LoginModule */ = {
+			isa = PBXGroup;
+			children = (
+				B9ECAE062D5F35DF00388266 /* AppleCoordinator.swift */,
+				B9ECADFA2D5E1F2B00388266 /* LoginViewController.swift */,
+				B9ECADF82D5DFD0700388266 /* LoginView.swift */,
+			);
+			path = LoginModule;
+			sourceTree = "<group>";
+		};
+		B9ECADEB2D5DF33F00388266 /* HomeModule */ = {
+			isa = PBXGroup;
+			children = (
+				B9ECAE082D5F3BA500388266 /* UserCardView.swift */,
+				B9ECADF62D5DFCD400388266 /* HomeView.swift */,
+			);
+			path = HomeModule;
+			sourceTree = "<group>";
+		};
+		B9ECADEC2D5DF35500388266 /* VoucherModule */ = {
+			isa = PBXGroup;
+			children = (
+				B9A2F1712D65BCE500401C69 /* VoucherView.swift */,
+			);
+			path = VoucherModule;
+			sourceTree = "<group>";
+		};
+		B9ECADED2D5DF35F00388266 /* CollectorCardModule */ = {
+			isa = PBXGroup;
+			children = (
+				B9A2F1732D65E93A00401C69 /* StampSelector.swift */,
+				B9A2F15E2D645A6600401C69 /* CollectorView.swift */,
+			);
+			path = CollectorCardModule;
+			sourceTree = "<group>";
+		};
+		B9ECAE002D5F208700388266 /* pngs */ = {
+			isa = PBXGroup;
+			children = (
+				B9ECADFE2D5F206D00388266 /* homeBackground.png */,
+			);
+			path = pngs;
+			sourceTree = "<group>";
+		};
+		B9ECAE012D5F208F00388266 /* svgs */ = {
+			isa = PBXGroup;
+			children = (
+				B9ECAE022D5F209E00388266 /* uGem.svg */,
+			);
+			path = svgs;
+			sourceTree = "<group>";
+		};
+		B9ECAE0C2D5F725100388266 /* UserAuth */ = {
+			isa = PBXGroup;
+			children = (
+				B9ECAE0A2D5F71F100388266 /* UserAuthResponse.swift */,
+				B9ECADF12D5DF58E00388266 /* UserAuthAPI.swift */,
+			);
+			path = UserAuth;
+			sourceTree = "<group>";
+		};
+		BB2F792B24A3F905000567C9 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				BB2F792C24A3F905000567C9 /* Expo.plist */,
+			);
+			name = Supporting;
+			path = uGem/Supporting;
+			sourceTree = "<group>";
+		};
+		D65327D7A22EEC0BE12398D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C2E3173556A471DD304B334 /* Pods-uGem.debug.xcconfig */,
+				7A4D352CD337FB3A3BF06240 /* Pods-uGem.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D7E4C46ADA2E9064B798F356 /* ExpoModulesProviders */ = {
+			isa = PBXGroup;
+			children = (
+				92DBD88DE9BF7D494EA9DA96 /* uGem */,
+			);
+			name = ExpoModulesProviders;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13B07F861A680F5B00A75B9A /* uGem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "uGem" */;
+			buildPhases = (
+				08A4A3CD28434E44B6B9DE2E /* [CP] Check Pods Manifest.lock */,
+				A3FB21937312C8AB46186C87 /* [Expo] Configure project */,
+				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				13B07F8E1A680F5B00A75B9A /* Resources */,
+				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */,
+				F4B5330F9C6D177128FD21B9 /* [CP] Embed Pods Frameworks */,
+				B98D85402D563802007EB784 /* Embed App Clips */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B98D857F2D5647BC007EB784 /* PBXTargetDependency */,
+			);
+			name = uGem;
+			productName = uGem;
+			productReference = 13B07F961A680F5B00A75B9A /* uGem.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B98D855A2D5647BA007EB784 /* uGemClip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B98D85812D5647BC007EB784 /* Build configuration list for PBXNativeTarget "uGemClip" */;
+			buildPhases = (
+				B98D85572D5647BA007EB784 /* Sources */,
+				B98D85582D5647BA007EB784 /* Frameworks */,
+				B98D85592D5647BA007EB784 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = uGemClip;
+			productName = uGemClip;
+			productReference = B98D855B2D5647BA007EB784 /* uGemClip.app */;
+			productType = "com.apple.product-type.application.on-demand-install-capable";
+		};
+		B98D856B2D5647BC007EB784 /* uGemClipTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B98D85842D5647BC007EB784 /* Build configuration list for PBXNativeTarget "uGemClipTests" */;
+			buildPhases = (
+				B98D85682D5647BC007EB784 /* Sources */,
+				B98D85692D5647BC007EB784 /* Frameworks */,
+				B98D856A2D5647BC007EB784 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B98D856E2D5647BC007EB784 /* PBXTargetDependency */,
+			);
+			name = uGemClipTests;
+			productName = uGemClipTests;
+			productReference = B98D856C2D5647BC007EB784 /* uGemClipTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B98D85752D5647BC007EB784 /* uGemClipUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B98D85872D5647BC007EB784 /* Build configuration list for PBXNativeTarget "uGemClipUITests" */;
+			buildPhases = (
+				B98D85722D5647BC007EB784 /* Sources */,
+				B98D85732D5647BC007EB784 /* Frameworks */,
+				B98D85742D5647BC007EB784 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B98D85782D5647BC007EB784 /* PBXTargetDependency */,
+			);
+			name = uGemClipUITests;
+			productName = uGemClipUITests;
+			productReference = B98D85762D5647BC007EB784 /* uGemClipUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1130;
+				TargetAttributes = {
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 1250;
+					};
+					B98D855A2D5647BA007EB784 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					B98D856B2D5647BC007EB784 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = B98D855A2D5647BA007EB784;
+					};
+					B98D85752D5647BC007EB784 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = B98D855A2D5647BA007EB784;
+					};
+				};
+			};
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "uGem" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83CBB9F61A601CBA00E9B192;
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13B07F861A680F5B00A75B9A /* uGem */,
+				B98D855A2D5647BA007EB784 /* uGemClip */,
+				B98D856B2D5647BC007EB784 /* uGemClipTests */,
+				B98D85752D5647BC007EB784 /* uGemClipUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13B07F8E1A680F5B00A75B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB2F792D24A3F905000567C9 /* Expo.plist in Resources */,
+				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
+				592813A8F79D02CF3F8E74A9 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B98D85592D5647BA007EB784 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9ECAD982D5B93FC00388266 /* ding.wav in Resources */,
+				B98D85652D5647BC007EB784 /* Preview Assets.xcassets in Resources */,
+				B9ECAE032D5F209E00388266 /* uGem.svg in Resources */,
+				B98D85622D5647BC007EB784 /* Assets.xcassets in Resources */,
+				B9ECADFF2D5F206D00388266 /* homeBackground.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B98D856A2D5647BC007EB784 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B98D85742D5647BC007EB784 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ -f \"$PODS_ROOT/../.xcode.env\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env\"\nfi\nif [[ -f \"$PODS_ROOT/../.xcode.env.local\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.local\"\nfi\n\n# The project root by default is one level up from the ios directory\nexport PROJECT_ROOT=\"$PROJECT_DIR\"/..\n\nif [[ \"$CONFIGURATION\" = *Debug* ]]; then\n  export SKIP_BUNDLING=1\nfi\nif [[ -z \"$ENTRY_FILE\" ]]; then\n  # Set the entry JS file using the bundler's entry resolution.\n  export ENTRY_FILE=\"$(\"$NODE_BINARY\" -e \"require('expo/scripts/resolveAppEntry')\" \"$PROJECT_ROOT\" ios absolute | tail -n 1)\"\nfi\n\nif [[ -z \"$CLI_PATH\" ]]; then\n  # Use Expo CLI\n  export CLI_PATH=\"$(\"$NODE_BINARY\" --print \"require.resolve('@expo/cli', { paths: [require.resolve('expo/package.json')] })\")\"\nfi\nif [[ -z \"$BUNDLE_COMMAND\" ]]; then\n  # Default Expo CLI command for bundling\n  export BUNDLE_COMMAND=\"export:embed\"\nfi\n\n# Source .xcode.env.updates if it exists to allow\n# SKIP_BUNDLING to be unset if needed\nif [[ -f \"$PODS_ROOT/../.xcode.env.updates\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.updates\"\nfi\n# Source local changes to allow overrides\n# if needed\nif [[ -f \"$PODS_ROOT/../.xcode.env.local\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.local\"\nfi\n\n`\"$NODE_BINARY\" --print \"require('path').dirname(require.resolve('react-native/package.json')) + '/scripts/react-native-xcode.sh'\"`\n\n";
+		};
+		08A4A3CD28434E44B6B9DE2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-uGem-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-uGem/Pods-uGem-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/AppAuth/AppAuthCore_Privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/EXConstants/EXConstants.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/EXConstants/ExpoConstants_privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/ExpoFileSystem/ExpoFileSystem_privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/GTMAppAuth/GTMAppAuth_Privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher/GTMSessionFetcher_Core_Privacy.bundle",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.xcframework/ios-arm64/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.xcframework/ios-arm64_x86_64-simulator/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/GoogleSignIn/GoogleSignIn.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/PurchasesHybridCommon/PurchasesHybridCommon.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/RCT-Folly/RCT-Folly_privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/RNCAsyncStorage/RNCAsyncStorage_resources.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/RNDeviceInfo/RNDeviceInfoPrivacyInfo.bundle",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Feather.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome6_Brands.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome6_Regular.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome6_Solid.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Foundation.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Octicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Zocial.ttf",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/React-Core_privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-cxxreact/React-cxxreact_privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/RevenueCat/RevenueCat.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/RevenueCatUI/RevenueCat_RevenueCatUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage/SDWebImage.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/boost/boost_privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/glog/glog_privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/react-native-google-maps/GoogleMapsPrivacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/react-native-maps/ReactNativeMapsPrivacy.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AppAuthCore_Privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EXConstants.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ExpoConstants_privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ExpoFileSystem_privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GTMAppAuth_Privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GTMSessionFetcher_Core_Privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/PurchasesHybridCommon.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RCT-Folly_privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RNCAsyncStorage_resources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RNDeviceInfoPrivacyInfo.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AntDesign.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Entypo.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EvilIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Feather.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Brands.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Regular.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Solid.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome6_Brands.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome6_Regular.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome6_Solid.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Fontisto.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Foundation.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Ionicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialCommunityIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Octicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SimpleLineIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Zocial.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/React-Core_privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/React-cxxreact_privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RevenueCat.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RevenueCat_RevenueCatUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SDWebImage.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/boost_privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/glog_privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMapsPrivacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ReactNativeMapsPrivacy.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-uGem/Pods-uGem-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3FB21937312C8AB46186C87 /* [Expo] Configure project */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[Expo] Configure project";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-uGem/expo-configure-project.sh\"\n";
+		};
+		F4B5330F9C6D177128FD21B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-uGem/Pods-uGem-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built/hermes.framework/hermes",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hermes.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-uGem/Pods-uGem-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13B07F871A680F5B00A75B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
+				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */,
+				00F476A74BC9404687D8576C /* noop-file.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B98D85572D5647BA007EB784 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9A2F1682D6472BE00401C69 /* ResponseType.swift in Sources */,
+				B9ECAE092D5F3BAA00388266 /* UserCardView.swift in Sources */,
+				B9ECADFD2D5E70CB00388266 /* MainView.swift in Sources */,
+				B9ECADF72D5DFCDA00388266 /* HomeView.swift in Sources */,
+				B9A2F15F2D645A6A00401C69 /* CollectorView.swift in Sources */,
+				B9A2F1632D64724400401C69 /* RewardAPI.swift in Sources */,
+				B9A2F1742D65E94400401C69 /* StampSelector.swift in Sources */,
+				B9A2F1642D64724400401C69 /* CollectorResponse.swift in Sources */,
+				B9ECADFB2D5E1F3100388266 /* LoginViewController.swift in Sources */,
+				B9ECADF02D5DF44E00388266 /* UserModel.swift in Sources */,
+				B9A2F16A2D64850600401C69 /* RewardResponseType.swift in Sources */,
+				B9ECADF22D5DF59400388266 /* UserAuthAPI.swift in Sources */,
+				B9A2F16E2D64884400401C69 /* CollectorModel.swift in Sources */,
+				B9ECADF92D5DFD0A00388266 /* LoginView.swift in Sources */,
+				B9A2F16C2D64883800401C69 /* VoucherModel.swift in Sources */,
+				B9ECAE072D5F35E600388266 /* AppleCoordinator.swift in Sources */,
+				B9A2F1722D65BCEA00401C69 /* VoucherView.swift in Sources */,
+				B9ECAE0B2D5F71FD00388266 /* UserAuthResponse.swift in Sources */,
+				B9A2F1662D64729300401C69 /* VoucherResponse.swift in Sources */,
+				B98D855E2D5647BA007EB784 /* uGemClipApp.swift in Sources */,
+				B9A2F1702D64CA1200401C69 /* RewardModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B98D85682D5647BC007EB784 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B98D85712D5647BC007EB784 /* uGemClipTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B98D85722D5647BC007EB784 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B98D857D2D5647BC007EB784 /* uGemClipUITestsLaunchTests.swift in Sources */,
+				B98D857B2D5647BC007EB784 /* uGemClipUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B98D856E2D5647BC007EB784 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B98D855A2D5647BA007EB784 /* uGemClip */;
+			targetProxy = B98D856D2D5647BC007EB784 /* PBXContainerItemProxy */;
+		};
+		B98D85782D5647BC007EB784 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B98D855A2D5647BA007EB784 /* uGemClip */;
+			targetProxy = B98D85772D5647BC007EB784 /* PBXContainerItemProxy */;
+		};
+		B98D857F2D5647BC007EB784 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B98D855A2D5647BA007EB784 /* uGemClip */;
+			targetProxy = B98D857E2D5647BC007EB784 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C2E3173556A471DD304B334 /* Pods-uGem.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = uGem/uGem.entitlements;
+				CURRENT_PROJECT_VERSION = 1.0.2;
+				DEVELOPMENT_TEAM = 5MJ649KLV6;
+				ENABLE_BITCODE = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"FB_SONARKIT_ENABLED=1",
+				);
+				INFOPLIST_FILE = uGem/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.2;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = app.ugem;
+				PRODUCT_NAME = uGem;
+				SWIFT_OBJC_BRIDGING_HEADER = "uGem/uGem-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		13B07F951A680F5B00A75B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A4D352CD337FB3A3BF06240 /* Pods-uGem.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = uGem/uGem.entitlements;
+				CURRENT_PROJECT_VERSION = 1.0.2;
+				DEVELOPMENT_TEAM = 5MJ649KLV6;
+				INFOPLIST_FILE = uGem/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.2;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
+				PRODUCT_BUNDLE_IDENTIFIER = app.ugem;
+				PRODUCT_NAME = uGem;
+				SWIFT_OBJC_BRIDGING_HEADER = "uGem/uGem-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		83CBBA201A601CBA00E9B192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = "$(SDKROOT)/usr/lib/swift\"$(inherited)\"";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "$(inherited)  ";
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				USE_HERMES = true;
+			};
+			name = Debug;
+		};
+		83CBBA211A601CBA00E9B192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = "$(SDKROOT)/usr/lib/swift\"$(inherited)\"";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "$(inherited)  ";
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
+				SDKROOT = iphoneos;
+				USE_HERMES = true;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B98D85822D5647BC007EB784 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = uGemClip/uGemClip.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_ASSET_PATHS = "\"uGemClip/Preview Content\"";
+				DEVELOPMENT_TEAM = 5MJ649KLV6;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = uGemClip/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = uGem;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio is recorded to transcribe the meeting. Audio recordings are discarded after transcription.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "You can view a text transcription of your meeting in the app.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = "app.ugem.Clip-reward";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B98D85832D5647BC007EB784 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = uGemClip/uGemClip.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_ASSET_PATHS = "\"uGemClip/Preview Content\"";
+				DEVELOPMENT_TEAM = 5MJ649KLV6;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = uGemClip/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = uGem;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio is recorded to transcribe the meeting. Audio recordings are discarded after transcription.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "You can view a text transcription of your meeting in the app.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0.4;
+				MTL_FAST_MATH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
+				PRODUCT_BUNDLE_IDENTIFIER = "app.ugem.Clip-reward";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B98D85852D5647BC007EB784 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 5MJ649KLV6;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = app.ugem.uGemClipTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/uGemClip.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/uGemClip";
+			};
+			name = Debug;
+		};
+		B98D85862D5647BC007EB784 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 5MJ649KLV6;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
+				PRODUCT_BUNDLE_IDENTIFIER = app.ugem.uGemClipTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/uGemClip.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/uGemClip";
+			};
+			name = Release;
+		};
+		B98D85882D5647BC007EB784 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 5MJ649KLV6;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = app.ugem.uGemClipUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = uGemClip;
+			};
+			name = Debug;
+		};
+		B98D85892D5647BC007EB784 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 5MJ649KLV6;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
+				PRODUCT_BUNDLE_IDENTIFIER = app.ugem.uGemClipUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = uGemClip;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "uGem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B07F941A680F5B00A75B9A /* Debug */,
+				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "uGem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CBBA201A601CBA00E9B192 /* Debug */,
+				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B98D85812D5647BC007EB784 /* Build configuration list for PBXNativeTarget "uGemClip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B98D85822D5647BC007EB784 /* Debug */,
+				B98D85832D5647BC007EB784 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B98D85842D5647BC007EB784 /* Build configuration list for PBXNativeTarget "uGemClipTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B98D85852D5647BC007EB784 /* Debug */,
+				B98D85862D5647BC007EB784 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B98D85872D5647BC007EB784 /* Build configuration list for PBXNativeTarget "uGemClipUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B98D85882D5647BC007EB784 /* Debug */,
+				B98D85892D5647BC007EB784 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
+}

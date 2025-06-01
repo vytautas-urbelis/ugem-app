@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "app.ugem",
+      "sha256_cert_fingerprints": [
+        "26:A3:95:8B:C3:F7:7F:AB:D5:00:DF:97:EF:4B:27:98:AE:70:E9:6A:D7:26:37:13:3C:0F:DC:44:5C:F2:A5:1F"
+      ]
+    }
+  }
+]

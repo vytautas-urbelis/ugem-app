@@ -1,0 +1,89 @@
+import {View} from "react-native";
+import {controlStorage} from "../../../../MMKV/control";
+import {useEffect, useState} from "react";
+import {VerifyCustomer} from "../../../../axios/axiosBusiness/customerCard";
+import * as Haptics from "expo-haptics";
+import OnCardFailure from "../../../../components/commonComponents/onCardScanned/onFailure";
+import Loader from "../../../../components/smallComponents/loader";
+import OnCardScanned from "../../../../components/commonComponents/onCardScanned";
+import {authStorage} from "../../../../MMKV/auth";
+import {Modal, SlideAnimation} from "react-native-modals";
+
+const CardScannedHome = () => {
+    const scannedCardQr = controlStorage.getString("scannedCardQr");
+    const token = authStorage.getString("accessToken");
+
+    const [isLoading, setIsLoading] = useState(true);
+    const [success, setSuccess] = useState(null);
+    const [responseMessage, SetResponseMessage] = useState("");
+    const [errorVisible, setErrorVisible] = useState(false);
+    const [successVisible, setSuccessVisible] = useState(false);
+    const [cardScanned, setCardScanned] = useState(false);
+
+    const [secretKey, setSecretKey] = useState("");
+
+    useEffect(() => {
+        const jwtToken = scannedCardQr.split("/").pop();
+        const onCardScanned = async () => {
+            setIsLoading(false);
+            try {
+                const getSecretKey = await VerifyCustomer(jwtToken, token);
+                setSecretKey(getSecretKey.secret_key);
+                setSuccess(true);
+                setCardScanned(true);
+                Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
+            } catch (error) {
+                SetResponseMessage(error.response.data.message);
+                setSuccess(false);
+                setErrorVisible(true);
+                Haptics.notificationAsync(Haptics.NotificationFeedbackType.Error);
+            } finally {
+                setIsLoading(false);
+            }
+        };
+        if (scannedCardQr) {
+            onCardScanned();
+        }
+    }, []);
+
+    return (
+        <View className="flex-1 justify-center items-center">
+            {isLoading ? (
+                <Loader/>
+            ) : (
+                <>
+                    {success ? (
+                        <Modal
+                            style={{zIndex: 2}}
+                            visible={cardScanned}
+                            modalAnimation={
+                                new SlideAnimation({
+                                    slideFrom: "bottom",
+                                })
+                            }>
+                            <View className="flex-1 w-screen h-screen">
+                                <OnCardScanned responseMessage={responseMessage} setCardScanned={setCardScanned}
+                                               secretKey={secretKey}/>
+                            </View>
+                        </Modal>
+                    ) : (
+                        <Modal
+                            style={{zIndex: 2}}
+                            visible={errorVisible}
+                            modalAnimation={
+                                new SlideAnimation({
+                                    slideFrom: "bottom",
+                                })
+                            }>
+                            <View className="flex-1 w-screen h-screen">
+                                <OnCardFailure responseMessage={responseMessage} setErrorVisible={setErrorVisible}/>
+                            </View>
+                        </Modal>
+                    )}
+                </>
+            )}
+        </View>
+    );
+};
+
+export default CardScannedHome;

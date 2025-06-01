@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "name": "uGem",
+    "slug": "uGem",
+    "version": "1.0.2",
+    "newArchEnabled": true,
+    "userInterfaceStyle": "automatic",
+    "scheme": "uGem-app",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.jpg",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "app.ugem",
+      "usesAppleSignIn": true
+    },
+    "android": {
+      "package": "app.ugem",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "@react-native-google-signin/google-signin",
+        {
+          "iosUrlScheme": "com.googleusercontent.apps.558275846498-1b8kc59k40ms69do83rp71r9frdsbnr0"
+        }
+      ],
+      [
+        "expo-apple-authentication"
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends.",
+          "cameraPermission": "Allow $(PRODUCT_NAME) to open the camera"
+        }
+      ],
+      "expo-router"
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "5536f310-4814-4bbf-bba7-a8509060ade4"
+      }
+    }
+  }
+}

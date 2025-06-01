@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /backend/api/admin/
+Disallow: /backend/api/
+Disallow: /backend/api/docs/
+Allow: /
+
+Sitemap: https://ugem.app/sitemap.xml
