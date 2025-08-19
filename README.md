@@ -1,5 +1,7 @@
 # 💎 uGem – Digital Loyalty Platform
 
+![Imgur Image]([http://i.imgur.com/zTONrOD](https://imgur.com/a/ugem-app-demo-qVfZLt5))
+
 **uGem** is a cross-platform digital loyalty app designed to help businesses grow their customer base and retention through modern tools like digital stamp cards, promotion vouchers, and subscription-based features.
 
 It includes:
