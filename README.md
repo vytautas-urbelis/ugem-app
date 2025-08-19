@@ -2,7 +2,7 @@
 
 ![Imgur Image](https://imgur.com/a/ugem-app-demo-qVfZLt5)
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/qVfZLt5"  ><a href="//imgur.com/a/qVfZLt5">uGem app demo</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+[<blockquote class="imgur-embed-pub" lang="en" data-id="a/qVfZLt5"  ><a href="//imgur.com/a/qVfZLt5">uGem app demo</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>]
 
 **uGem** is a cross-platform digital loyalty app designed to help businesses grow their customer base and retention through modern tools like digital stamp cards, promotion vouchers, and subscription-based features.
 
